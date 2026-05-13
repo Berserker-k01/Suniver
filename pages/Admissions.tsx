@@ -50,7 +50,7 @@ const Admissions: React.FC = () => {
       <PageHeader 
         title="Admissions" 
         subtitle="Rejoignez une communauté d'excellence au cœur de l'Afrique"
-        image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1920"
+        image="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1920"
       />
 
       {/* Intro */}

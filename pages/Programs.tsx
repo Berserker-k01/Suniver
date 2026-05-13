@@ -11,7 +11,7 @@ const programs: Program[] = [
     faculty: 'Droit Privé',
     duration: '3 ans',
     description: 'Une base solide en droit civil, droit des obligations, droit commercial et droit du travail. Idéal pour les futures carrières d\'avocat ou de conseil juridique.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '2',
@@ -20,7 +20,7 @@ const programs: Program[] = [
     faculty: 'Droit Public',
     duration: '3 ans',
     description: 'Étudiez les relations entre l\'État, les institutions et les citoyens. Spécialisez-vous en droit constitutionnel et administratif.',
-    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '3',
@@ -29,7 +29,7 @@ const programs: Program[] = [
     faculty: 'Droit Privé',
     duration: '2 ans',
     description: 'Une spécialisation de pointe sur le droit uniforme africain, essentielle pour les juristes d\'entreprise dans l\'espace OHADA.',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ const programs: Program[] = [
     faculty: 'Droit Public',
     duration: '2 ans',
     description: 'Enjeux géopolitiques, diplomatie et régulations internationales. Préparez-vous aux carrières dans les organisations internationales.',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '5',
@@ -47,7 +47,7 @@ const programs: Program[] = [
     faculty: 'Droit Privé',
     duration: '2 ans',
     description: 'Approfondissez vos connaissances en droit pénal, procédure pénale et criminologie pour les carrières judiciaires.',
-    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '6',
@@ -56,7 +56,7 @@ const programs: Program[] = [
     faculty: 'Recherche',
     duration: '3-5 ans',
     description: 'Recherche doctorale avancée sous la supervision de nos professeurs titulaires pour devenir enseignant-chercheur.',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -66,7 +66,7 @@ const Programs: React.FC = () => {
       <PageHeader 
         title="Nos Formations" 
         subtitle="Des programmes adaptés aux réalités juridiques du Togo et de l'OHADA"
-        image="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1920"
+        image="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&q=80&w=1920"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">

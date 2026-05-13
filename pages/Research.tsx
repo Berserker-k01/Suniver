@@ -8,7 +8,7 @@ const Research: React.FC = () => {
       <PageHeader 
         title="Recherche & Innovation" 
         subtitle="Repousser les frontières de la connaissance pour un monde meilleur"
-        image="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=1920"
+        image="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1920"
       />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
@@ -42,7 +42,7 @@ const Research: React.FC = () => {
           <div className="lg:w-1/2 relative">
              <div className="absolute -top-4 -left-4 w-24 h-24 bg-university-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-             <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&q=80&w=800" alt="Scientist working" className="rounded-2xl shadow-2xl relative z-10 w-full" />
+             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Chercheuse en droit" className="rounded-2xl shadow-2xl relative z-10 w-full" />
           </div>
         </div>
       </section>

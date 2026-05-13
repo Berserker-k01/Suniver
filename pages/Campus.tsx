@@ -8,7 +8,7 @@ const Campus: React.FC = () => {
       <PageHeader 
         title="Vie sur le Campus" 
         subtitle="Un environnement dynamique au cœur de Lomé"
-        image="https://upload.wikimedia.org/wikipedia/commons/b/b5/Monument_de_l%27ind%C3%A9pendance_du_Togo_%C3%A0_Lom%C3%A9_17.jpg"
+        image="https://univ-lome.tg/wp-content/uploads/2024/04/UL.jpg"
       />
 
       {/* Intro */}
@@ -99,17 +99,17 @@ const Campus: React.FC = () => {
            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-10 text-center">Le Campus en Images</h2>
            <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
              <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Graduates" />
+                <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Étudiants sur le campus" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
              </div>
              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Students" />
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Étudiant" />
              </div>
              <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative group">
                 <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Architecture" />
              </div>
              <div className="col-span-2 row-span-1 rounded-2xl overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2923216?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Collaboration" />
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Travail en équipe" />
              </div>
            </div>
         </div>

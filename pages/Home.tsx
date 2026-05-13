@@ -10,7 +10,7 @@ const newsData: NewsItem[] = [
     date: '12 Mai 2024',
     category: 'Excellence',
     summary: "Nos étudiants ont remporté la première place lors de la phase nationale, démontrant la qualité de l'enseignement juridique au Togo.",
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '2',
@@ -18,7 +18,7 @@ const newsData: NewsItem[] = [
     date: '08 Mai 2024',
     category: 'Partenariat',
     summary: "Une convention signée pour faciliter les stages et l'insertion professionnelle des jeunes diplômés en droit.",
-    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '3',
@@ -26,7 +26,7 @@ const newsData: NewsItem[] = [
     date: '01 Mai 2024',
     category: 'Recherche',
     summary: "Des experts nationaux et internationaux se réunissent à Lomé pour discuter des enjeux juridiques du numérique.",
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-law-700">
-              <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800" alt="Droit Public" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" alt="Droit Public" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-law-900/90 via-law-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
                 <h3 className="text-2xl font-bold text-white mb-2">Droit Public</h3>
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 mt-0 md:-mt-8 border-b-4 border-university-600">
-              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800" alt="Droit Privé" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&q=80&w=800" alt="Droit Privé" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-university-900/90 via-university-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
                 <h3 className="text-2xl font-bold text-white mb-2">Droit Privé</h3>
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-accent-600">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="Sciences Criminelles" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Sciences Criminelles" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
                 <h3 className="text-2xl font-bold text-white mb-2">Sciences Criminelles</h3>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X, Scale } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,34 +37,42 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-12">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group" onClick={closeMenu}>
-            <div className={`p-2 rounded-lg transition-colors ${isScrolled || isOpen ? 'bg-university-700 text-white' : 'bg-white text-university-900'}`}>
-              <GraduationCap size={28} />
+            <div className={`p-2 rounded-lg transition-colors ${isScrolled || isOpen ? 'bg-university-600 text-white' : 'bg-white text-university-900'}`}>
+              <Scale size={28} />
             </div>
             <span className={`font-serif text-2xl font-bold tracking-tight ${isScrolled || isOpen ? 'text-slate-900' : 'text-white'}`}>
-              Université <span className={isScrolled || isOpen ? 'text-university-700' : 'text-university-300'}>Horizon</span>
+              FDD <span className={isScrolled || isOpen ? 'text-university-600' : 'text-accent-500'}>| UL</span>
             </span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`font-medium text-sm tracking-wide transition-colors duration-200 relative group ${
-                  isScrolled || location.pathname !== '/'
-                    ? 'text-slate-600 hover:text-university-700'
-                    : 'text-slate-200 hover:text-white'
-                } ${location.pathname === link.path ? (isScrolled ? 'text-university-700 font-semibold' : 'text-white font-semibold') : ''}`}
-              >
-                {link.name}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-university-500 transition-all duration-300 ${location.pathname === link.path ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              const isHomePage = location.pathname === '/';
+              const useDarkText = isScrolled || !isHomePage;
+
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`font-medium text-sm tracking-wide transition-all duration-200 relative group ${
+                    useDarkText
+                      ? isActive ? 'text-university-700 font-bold' : 'text-slate-700 hover:text-university-600'
+                      : isActive ? 'text-accent-500 font-bold' : 'text-white/90 hover:text-white'
+                  }`}
+                >
+                  {link.name}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-300 ${
+                    useDarkText ? 'bg-university-600' : 'bg-accent-500'
+                  } ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </Link>
+              );
+            })}
             <Link to="/admissions" className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg ${
-                isScrolled 
-                ? 'bg-gradient-to-r from-university-600 to-university-800 text-white shadow-university-500/30' 
-                : 'bg-white text-university-900 hover:bg-slate-50 shadow-black/10'
+                isScrolled || location.pathname !== '/'
+                ? 'bg-university-600 text-white shadow-university-500/30 hover:bg-university-700' 
+                : 'bg-accent-500 text-university-950 hover:bg-accent-400 shadow-black/10'
             }`}>
               Candidater
             </Link>

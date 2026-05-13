@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, GraduationCap } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Scale } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <GraduationCap className="text-university-400" size={32} />
-              <span className="font-serif text-2xl font-bold">Université Horizon</span>
+              <Scale className="text-accent-500" size={32} />
+              <span className="font-serif text-2xl font-bold">FDD | UL</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Former les leaders de demain grâce à une excellence académique, une recherche innovante et une communauté inclusive.
+              Former les juristes de demain au service du développement du Togo et de l'Afrique. Excellence, Éthique et Justice.
             </p>
             <div className="flex space-x-4 pt-4">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-university-600 hover:text-white transition-all duration-300 hover:-translate-y-1"><Facebook size={18} /></a>
@@ -41,16 +41,16 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-serif font-semibold mb-6 text-university-100">Contact</h3>
             <ul className="space-y-4 text-sm text-slate-300">
               <li className="flex items-start space-x-3 group">
-                <MapPin size={18} className="text-university-400 mt-0.5 flex-shrink-0 group-hover:text-white transition-colors" />
-                <span className="group-hover:text-white transition-colors">123 Avenue du Savoir<br />75000 Paris, France</span>
+                <MapPin size={18} className="text-accent-500 mt-0.5 flex-shrink-0 group-hover:text-white transition-colors" />
+                <span className="group-hover:text-white transition-colors">Campus Universitaire, BP 1515<br />Boulevard Gnassingbé Eyadéma, Lomé, Togo</span>
               </li>
               <li className="flex items-center space-x-3 group">
-                <Phone size={18} className="text-university-400 flex-shrink-0 group-hover:text-white transition-colors" />
-                <span className="group-hover:text-white transition-colors">+33 1 23 45 67 89</span>
+                <Phone size={18} className="text-accent-500 flex-shrink-0 group-hover:text-white transition-colors" />
+                <span className="group-hover:text-white transition-colors">+228 22 25 48 43</span>
               </li>
               <li className="flex items-center space-x-3 group">
-                <Mail size={18} className="text-university-400 flex-shrink-0 group-hover:text-white transition-colors" />
-                <span className="group-hover:text-white transition-colors">contact@univ-horizon.fr</span>
+                <Mail size={18} className="text-accent-500 flex-shrink-0 group-hover:text-white transition-colors" />
+                <span className="group-hover:text-white transition-colors">fdd@univ-lome.tg</span>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Université Horizon. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Faculté de Droit - Université de Lomé. Tous droits réservés.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-slate-300 transition-colors">Mentions Légales</a>
             <a href="#" className="hover:text-slate-300 transition-colors">Politique de Confidentialité</a>

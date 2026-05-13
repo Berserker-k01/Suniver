@@ -16,7 +16,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, image }) => {
           alt={title} 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Content */}

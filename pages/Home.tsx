@@ -6,27 +6,27 @@ import { NewsItem } from '../types';
 const newsData: NewsItem[] = [
   {
     id: '1',
-    title: "L'Université Horizon classée dans le top 10 européen",
-    date: '12 Mars 2024',
+    title: "La FDD-UL brille au concours de plaidoirie de l'OHADA",
+    date: '12 Mai 2024',
     category: 'Excellence',
-    summary: "Notre engagement envers une recherche de qualité et un enseignement innovant a été récompensé par le dernier classement international.",
+    summary: "Nos étudiants ont remporté la première place lors de la phase nationale, démontrant la qualité de l'enseignement juridique au Togo.",
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '2',
-    title: "Inauguration du nouveau centre de biotechnologie",
-    date: '08 Mars 2024',
-    category: 'Campus',
-    summary: "Un espace de 5000m² dédié à l'innovation médicale et aux sciences du vivant ouvre ses portes aux étudiants.",
-    image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800'
+    title: "Nouveau partenariat avec le Barreau du Togo",
+    date: '08 Mai 2024',
+    category: 'Partenariat',
+    summary: "Une convention signée pour faciliter les stages et l'insertion professionnelle des jeunes diplômés en droit.",
+    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '3',
-    title: "Semaine de l'art et de la culture : programme dévoilé",
-    date: '01 Mars 2024',
-    category: 'Vie Étudiante',
-    summary: "Expositions, concerts et théâtre : découvrez les talents de notre communauté universitaire la semaine prochaine.",
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=800'
+    title: "Conférence sur la Cybercriminalité au Togo",
+    date: '01 Mai 2024',
+    category: 'Recherche',
+    summary: "Des experts nationaux et internationaux se réunissent à Lomé pour discuter des enjeux juridiques du numérique.",
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -37,8 +37,8 @@ const Home: React.FC = () => {
       <div className="relative h-screen min-h-[600px] -mt-20 flex items-center">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1920" 
-            alt="University Campus Architecture" 
+            src="https://univ-lome.tg/wp-content/uploads/2024/04/UL.jpg" 
+            alt="Entrée principale de l'Université de Lomé" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
@@ -46,20 +46,20 @@ const Home: React.FC = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
           <div className="max-w-2xl">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-university-500/20 text-university-200 border border-university-500/30 text-xs font-bold tracking-widest mb-6 backdrop-blur-sm shadow-lg shadow-black/10">
-              ADMISSIONS OUVERTES 2024-2025
+            <span className="inline-block px-4 py-1.5 rounded-full bg-university-500/20 text-accent-500 border border-university-500/30 text-xs font-bold tracking-widest mb-6 backdrop-blur-sm shadow-lg shadow-black/10">
+              INSCRIPTIONS 2024-2025 | UNIVERSITÉ DE LOMÉ
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-sm">
-              L'excellence à <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-university-300 to-university-100">portée de main.</span>
+              Façonnez l'avenir du <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-accent-300">Droit au Togo.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-lg">
-              Rejoignez une communauté mondiale de penseurs et d'innovateurs. Construisez votre avenir dans un environnement qui valorise le savoir et l'audace.
+              Rejoignez la Faculté de Droit la plus prestigieuse du Togo. Forgez votre esprit critique et devenez les piliers de la justice de demain.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <Link to="/formations" className="group relative inline-flex justify-center items-center px-8 py-4 bg-gradient-to-r from-university-600 to-university-700 hover:from-university-500 hover:to-university-600 text-white rounded-xl font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-university-500/40 shadow-lg shadow-university-900/20 overflow-hidden">
+              <Link to="/formations" className="group relative inline-flex justify-center items-center px-8 py-4 bg-gradient-to-r from-university-600 to-university-800 hover:from-university-500 hover:to-university-700 text-white rounded-xl font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-university-500/40 shadow-lg shadow-university-900/20 overflow-hidden">
                 <span className="relative z-10 flex items-center">
-                  Découvrir nos programmes
+                  Nos Parcours (LMD)
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
@@ -79,23 +79,23 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-8">
           <div className="text-center group cursor-default">
             <div className="text-university-600 mb-3 flex justify-center transform group-hover:scale-110 transition-transform duration-300"><Users size={32} /></div>
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">15k+</div>
+            <div className="text-3xl md:text-4xl font-bold text-slate-900">12k+</div>
             <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Étudiants</div>
           </div>
           <div className="text-center group cursor-default">
             <div className="text-university-600 mb-3 flex justify-center transform group-hover:scale-110 transition-transform duration-300"><BookOpen size={32} /></div>
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">200+</div>
-            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Programmes</div>
+            <div className="text-3xl md:text-4xl font-bold text-slate-900">15+</div>
+            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Spécialités</div>
           </div>
           <div className="text-center group cursor-default">
             <div className="text-university-600 mb-3 flex justify-center transform group-hover:scale-110 transition-transform duration-300"><Trophy size={32} /></div>
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">Top 50</div>
-            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Classement Mondial</div>
+            <div className="text-3xl md:text-4xl font-bold text-slate-900">N°1</div>
+            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Droit au Togo</div>
           </div>
           <div className="text-center group cursor-default">
             <div className="text-university-600 mb-3 flex justify-center transform group-hover:scale-110 transition-transform duration-300"><Globe size={32} /></div>
-            <div className="text-3xl md:text-4xl font-bold text-slate-900">98%</div>
-            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Taux d'insertion</div>
+            <div className="text-3xl md:text-4xl font-bold text-slate-900">45+</div>
+            <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">Enseignants</div>
           </div>
         </div>
       </section>
@@ -110,35 +110,35 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
-              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800" alt="Sciences" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-law-700">
+              <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800" alt="Droit Public" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-t from-law-900/90 via-law-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-white mb-2">Sciences & Technologies</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Droit Public</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  Ingénierie, Informatique, Biologie, Physique
+                  Droit Administratif, Constitutionnel, International Public
                 </p>
               </div>
             </div>
             
-            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 mt-0 md:-mt-8">
-              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&q=80&w=800" alt="Arts" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 mt-0 md:-mt-8 border-b-4 border-university-600">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800" alt="Droit Privé" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-t from-university-900/90 via-university-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-white mb-2">Arts & Humanités</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Droit Privé</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  Littérature, Histoire, Philosophie, Langues
+                  Droit Civil, Commercial, Travail, OHADA
                 </p>
               </div>
             </div>
 
-            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
-              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" alt="Business" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="group relative h-96 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-accent-600">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="Sciences Criminelles" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-white mb-2">Économie & Gestion</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Sciences Criminelles</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  Management, Finance, Marketing, Droit
+                  Criminologie, Procédure Pénale, Droit Pénal
                 </p>
               </div>
             </div>
@@ -193,23 +193,23 @@ const Home: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-university-900 relative overflow-hidden">
+      <section className="py-24 bg-law-900 relative overflow-hidden">
         {/* Abstract shapes */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-university-800 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-university-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Prêt à façonner votre avenir ?</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Rejoignez la nouvelle génération de juristes</h2>
           <p className="text-lg text-university-100 mb-12 max-w-2xl mx-auto">
-            Les candidatures pour la rentrée de septembre sont ouvertes. Rejoignez l'Université Horizon et commencez votre parcours vers l'excellence.
+            Les pré-inscriptions à la Faculté de Droit de Lomé sont désormais ouvertes. Préparez votre avenir au service du droit et de la justice.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-5">
-            <Link to="/admissions" className="px-8 py-4 bg-white text-university-900 rounded-xl font-bold hover:bg-slate-50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl shadow-lg flex items-center justify-center">
+            <Link to="/admissions" className="px-8 py-4 bg-accent-500 text-law-900 rounded-xl font-bold hover:bg-accent-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl shadow-lg flex items-center justify-center">
               Candidater maintenant
               <ArrowRight className="ml-2" size={20} />
             </Link>
-            <button className="px-8 py-4 bg-transparent border-2 border-university-400 text-university-100 rounded-xl font-bold hover:bg-university-800/50 hover:border-university-300 hover:text-white transition-all duration-300 flex items-center justify-center">
-              Télécharger la brochure
+            <button className="px-8 py-4 bg-transparent border-2 border-accent-400 text-accent-100 rounded-xl font-bold hover:bg-university-800/50 hover:border-accent-300 hover:text-white transition-all duration-300 flex items-center justify-center">
+              Guide de l'étudiant FDD
             </button>
           </div>
         </div>

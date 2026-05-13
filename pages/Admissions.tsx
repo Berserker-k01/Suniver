@@ -7,41 +7,41 @@ const Admissions: React.FC = () => {
     {
       icon: <UserCheck size={28} />,
       title: "1. Créez votre compte",
-      desc: "Inscrivez-vous sur notre portail candidat pour commencer votre dossier."
+      desc: "Inscrivez-vous sur le portail de la DAAS (Direction des Affaires Académiques et de la Scolarité) pour commencer votre dossier."
     },
     {
       icon: <FileCheck size={28} />,
       title: "2. Soumettez vos documents",
-      desc: "Relevés de notes, lettre de motivation et lettres de recommandation."
+      desc: "Diplôme du BAC II, relevés de notes, acte de naissance et certificat de nationalité."
     },
     {
       icon: <Send size={28} />,
-      title: "3. Payez les frais",
-      desc: "Réglez les frais de dossier de 50€ (non remboursables) pour valider l'envoi."
+      title: "3. Frais d'inscription",
+      desc: "Réglez vos frais d'inscription via Flooz, T-Money ou dans les banques partenaires (UTB, BTCI)."
     },
     {
       icon: <Calendar size={28} />,
-      title: "4. Entretien",
-      desc: "Les candidats admissibles seront conviés à un entretien de motivation."
+      title: "4. Validation",
+      desc: "Après vérification, votre carte d'étudiant numérique sera générée sur votre espace personnel."
     }
   ];
 
   const faqs = [
     {
-      q: "Quel est le coût de la scolarité ?",
-      a: "Les frais varient selon le programme. Pour une Licence, comptez environ 170€ par an pour les ressortissants UE, et 2770€ pour les étudiants internationaux."
+      q: "Quel est le coût de la scolarité à la FDD ?",
+      a: "Pour les étudiants nationaux et de l'espace UEMOA, les frais sont d'environ 25 000 FCFA par an pour la Licence. Pour les étudiants hors UEMOA, les frais sont de 250 000 FCFA."
     },
     {
-      q: "Proposez-vous des bourses ?",
-      a: "Oui, nous offrons des bourses au mérite et des aides sociales. Plus de 30% de nos étudiants bénéficient d'une aide financière."
+      q: "Comment s'effectue le paiement des frais ?",
+      a: "Le paiement se fait exclusivement via les plateformes numériques (T-Money, Flooz) ou au guichet des banques partenaires de l'Université de Lomé."
     },
     {
-      q: "Puis-je candidater à plusieurs programmes ?",
-      a: "Oui, vous pouvez sélectionner jusqu'à 3 vœux dans votre dossier de candidature unique."
+      q: "Quels sont les débouchés après la FDD-UL ?",
+      a: "Magistrature, Barreau, Notariat, Huissier de justice, juriste d'entreprise ou carrières dans l'administration publique togolaise."
     },
     {
-      q: "Les cours sont-ils en anglais ?",
-      a: "La majorité des cours de Licence sont en français. Cependant, de nombreux Masters sont enseignés à 100% en anglais."
+      q: "Le système LMD est-il appliqué ?",
+      a: "Oui, la Faculté de Droit applique rigoureusement le système Licence-Master-Doctorat (LMD) conformément aux normes du CAMES."
     }
   ];
 
@@ -49,8 +49,8 @@ const Admissions: React.FC = () => {
     <div className="bg-slate-50 min-h-screen pb-20">
       <PageHeader 
         title="Admissions" 
-        subtitle="Rejoignez une communauté d'excellence. Votre avenir commence par un clic."
-        image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Rejoignez une communauté d'excellence au cœur de l'Afrique"
+        image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1920"
       />
 
       {/* Intro */}
@@ -127,8 +127,8 @@ const Admissions: React.FC = () => {
                 <div className="relative z-10">
                    <h3 className="text-3xl font-serif font-bold mb-6">Prêt à vous lancer ?</h3>
                    <p className="text-university-100 mb-8 leading-relaxed text-lg">
-                     Ne manquez pas l'opportunité d'étudier dans l'une des meilleures universités d'Europe. 
-                     Préparez vos documents dès maintenant.
+                     Ne manquez pas l'opportunité d'étudier dans l'une des meilleures universités d'Afrique de l'Ouest. 
+                     Préparez votre dossier d'inscription dès maintenant.
                    </p>
                    <ul className="space-y-4 mb-10">
                      <li className="flex items-center gap-3 text-sm font-medium">

@@ -6,57 +6,57 @@ import { Search, Filter, Clock, Award, ArrowRight } from 'lucide-react';
 const programs: Program[] = [
   {
     id: '1',
-    title: "Licence en Informatique & IA",
+    title: "Licence en Droit Privé",
     degree: 'Licence',
-    faculty: 'Sciences & Technologies',
+    faculty: 'Droit Privé',
     duration: '3 ans',
-    description: 'Une formation complète couvrant le développement logiciel, les algorithmes et une introduction approfondie à l\'intelligence artificielle.',
-    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80&w=800'
+    description: 'Une base solide en droit civil, droit des obligations, droit commercial et droit du travail. Idéal pour les futures carrières d\'avocat ou de conseil juridique.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '2',
-    title: "Master en Droit International",
-    degree: 'Master',
-    faculty: 'Économie & Gestion',
-    duration: '2 ans',
-    description: 'Spécialisez-vous dans les enjeux juridiques mondiaux, le commerce international et les droits de l\'homme.',
-    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
+    title: "Licence en Droit Public",
+    degree: 'Licence',
+    faculty: 'Droit Public',
+    duration: '3 ans',
+    description: 'Étudiez les relations entre l\'État, les institutions et les citoyens. Spécialisez-vous en droit constitutionnel et administratif.',
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '3',
-    title: "Beaux-Arts & Design Numérique",
-    degree: 'Licence',
-    faculty: 'Arts & Humanités',
-    duration: '3 ans',
-    description: 'Fusionnez créativité traditionnelle et outils numériques modernes pour devenir un designer complet.',
-    image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800'
+    title: "Master en Droit des Affaires (OHADA)",
+    degree: 'Master',
+    faculty: 'Droit Privé',
+    duration: '2 ans',
+    description: 'Une spécialisation de pointe sur le droit uniforme africain, essentielle pour les juristes d\'entreprise dans l\'espace OHADA.',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '4',
-    title: "Doctorat en Neurosciences",
-    degree: 'Doctorat',
-    faculty: 'Sciences & Technologies',
-    duration: '4 ans',
-    description: 'Recherche avancée sur le fonctionnement du cerveau, avec accès à nos laboratoires de pointe.',
-    image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800'
+    title: "Master en Droit International",
+    degree: 'Master',
+    faculty: 'Droit Public',
+    duration: '2 ans',
+    description: 'Enjeux géopolitiques, diplomatie et régulations internationales. Préparez-vous aux carrières dans les organisations internationales.',
+    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '5',
-    title: "MBA Stratégie & Innovation",
+    title: "Master en Sciences Criminelles",
     degree: 'Master',
-    faculty: 'Économie & Gestion',
-    duration: '18 mois',
-    description: 'Pour les futurs leaders qui veulent transformer les entreprises et piloter l\'innovation.',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800'
+    faculty: 'Droit Privé',
+    duration: '2 ans',
+    description: 'Approfondissez vos connaissances en droit pénal, procédure pénale et criminologie pour les carrières judiciaires.',
+    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '6',
-    title: "Licence Histoire & Archéologie",
-    degree: 'Licence',
-    faculty: 'Arts & Humanités',
-    duration: '3 ans',
-    description: 'Explorez le passé pour comprendre le présent. Comprend des stages de fouilles sur le terrain.',
-    image: 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&q=80&w=800'
+    title: "Doctorat en Droit",
+    degree: 'Doctorat',
+    faculty: 'Recherche',
+    duration: '3-5 ans',
+    description: 'Recherche doctorale avancée sous la supervision de nos professeurs titulaires pour devenir enseignant-chercheur.',
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -65,8 +65,8 @@ const Programs: React.FC = () => {
     <div className="bg-slate-50 min-h-screen pb-20">
       <PageHeader 
         title="Nos Formations" 
-        subtitle="Un large éventail de programmes pour construire votre carrière"
-        image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Des programmes adaptés aux réalités juridiques du Togo et de l'OHADA"
+        image="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1920"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">

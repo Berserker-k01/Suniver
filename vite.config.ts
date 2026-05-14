@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        // Render (et autres hôtes distants) envoient un en-tête Host que Vite refuse par défaut
+        allowedHosts: ['suniver.onrender.com', '.onrender.com'],
+      },
+      preview: {
+        port: 3000,
+        host: '0.0.0.0',
+        allowedHosts: ['suniver.onrender.com', '.onrender.com'],
       },
       plugins: [react()],
       define: {
